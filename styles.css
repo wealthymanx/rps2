@@ -1,0 +1,107 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #00bcd4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-size: 20px; 
+}
+
+/* Main game container styles */
+#gameContainer {
+    text-align: center;
+    background-color: #00bcd4;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    width: 80%; 
+}
+
+/* Title and subtitle styles */
+h1, h2 {
+    color: white;
+}
+
+h1 {
+    font-size: 2.5rem; /* Font size for main heading */
+}
+
+h2 {
+    font-size: 2rem; /* Font size for subheading */
+}
+
+/* Styles for choice buttons (Rock, Paper, Scissors) */
+#choices {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    margin: 30px 0; 
+}
+
+.choice {
+    font-size: 4rem; 
+    padding: 30px;  
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover effect for choices */
+.choice:hover {
+    cursor: pointer;
+    background-color: #f15309;
+    transform: scale(1.1);
+}
+
+/* Color styles based on game results */
+.choice.selected {
+    background-color: #ff5db1;
+}
+
+.choice.computer-selected {
+    background-color: #63eb0f;
+}
+
+.choice.draw {
+    background-image: linear-gradient(to right, #ff5db1 50%, #63eb0f 50%);
+}
+
+/* Button styles */
+button {
+    background-color: #ffa600;
+    color: white;
+    border: none;
+    padding: 15px 30px; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1.5rem; 
+}
+
+button:hover {
+    background-color: #ff8c00;
+}
+
+/* Result text styles */
+#resultText {
+    font-size: 2rem; 
+}
+
+#resultText.win {
+    color: #ff5db1;
+}
+
+#resultText.lose {
+    color: #63eb0f;
+}
+
+#resultText.draw {
+    color: #ffa600;
+}
+
+
+p {
+    color: white;
+    font-size: 1.5rem; 
+}

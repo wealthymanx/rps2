@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rochambeau</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    
+    <div id="initialState">
+        <h1>Rochambeau</h1>
+        <p>
+            <i class="far fa-hand-rock fa-3x"></i> 
+            <i class="far fa-hand-paper fa-3x"></i> 
+            <i class="far fa-hand-scissors fa-3x"></i> 
+        </p>
+        <button onclick="startGame()">Let's Go!</button>
+    </div>
+
+    <div id="gameState" style="display: none;">
+        <h1>Rochambeau</h1>
+        <p id="choiceText"></p>
+        <div id="choices">
+            <div class="choice" id="rock"><i class="far fa-hand-back-fist"></i></div>
+            <div class="choice" id="paper"><i class="far fa-hand"></i></div>
+            <div class="choice" id="scissors"><i class="far fa-hand-scissors"></i></div>
+        </div>
+        <button id="playHandButton">Play Hand</button>
+        <p id="countdownText">Choose an option...</p>
+        <p id="resultText"></p>
+        <p id="score">Score: 0 out of 0</p>
+        <button onclick="resetGame()">Play Again</button>
+    </div>
+
+    <script src="rps.js"></script>
+</body>
+
+</html>
